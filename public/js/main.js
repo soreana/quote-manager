@@ -3,6 +3,18 @@ $(".selection-2").select2({
     dropdownParent: $('#dropDownSelect1')
 });
 
+var speed = {
+    slideDown:250,
+    slideUp:300,
+    slideDownNextSpeed:500,
+    updated:false
+};
+
+function updateSpeed( speed) {
+    if( !speed.updated)
+        speed.slideDown = speed.slideDownNextSpeed;
+}
+
 (function ($) {
     "use strict";
 
@@ -18,21 +30,33 @@ $(".selection-2").select2({
                 $(this).removeClass('has-val');
             }
         })    
-    })
+    });
             
 
     /*==================================================================
     [ Chose Radio ]*/
     $("#radio1").on('change', function(){
         if ($(this).is(":checked")) {
-            $('.input3-select').slideUp(300);
+            $('.input1-select,.input1-3-select').slideDown(speed.slideDown);
+            $('.input2-select,.input3-select').slideUp(speed.slideUp);
         }
+        updateSpeed(speed)
     });
 
     $("#radio2").on('change', function(){
         if ($(this).is(":checked")) {
-            $('.input3-select').slideDown(300);
+            $('.input1-select,.input1-3-select,.input3-select').slideUp(speed.slideUp);
+            $('.input2-select').slideDown(speed.slideDown);
         }
+        updateSpeed(speed)
+    });
+
+    $("#radio3").on('change', function(){
+        if ($(this).is(":checked")) {
+            $('.input1-select,.input2-select').slideUp(speed.slideUp);
+            $('.input3-select,.input1-3-select').slideDown(speed.slideDown);
+        }
+        updateSpeed(speed)
     });
 
 
