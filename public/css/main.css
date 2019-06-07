@@ -120,6 +120,25 @@ iframe {
 }
 
 
+/* font-Koodakbold */
+@font-face {
+  font-family: Koodakbold;
+  src: url('http://fonts.codearena.ir/b/koodakbold/koodakbold.eot');
+  src: url('http://fonts.codearena.ir/b/koodakbold/koodakbold.eot?#iefix') format('embedded-opentype'),
+  url('http://fonts.codearena.ir/b/koodakbold/koodakbold.woff') format('woff'),
+  url('http://fonts.codearena.ir/b/koodakbold/koodakbold.ttf') format('truetype');
+  font-weight: normal;
+}
+
+/* font-Titrbold */
+@font-face {
+  font-family: Titrbold;
+  src: url('http://fonts.codearena.ir/b/titrbold/titrbold.eot');
+  src: url('http://fonts.codearena.ir/b/titrbold/titrbold.eot?#iefix') format('embedded-opentype'),
+  url('http://fonts.codearena.ir/b/titrbold/titrbold.woff') format('woff'),
+  url('http://fonts.codearena.ir/b/titrbold/titrbold.ttf') format('truetype');
+  font-weight: normal;
+}
 
 
 
@@ -171,7 +190,7 @@ iframe {
 
 .contact3-form-title {
   display: block;
-  font-family: Poppins-Bold;
+  font-family: Koodakbold;
   font-size: 39px;
   color: #fff;
   line-height: 1.2;
