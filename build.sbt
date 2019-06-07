@@ -25,11 +25,13 @@ libraryDependencies += "org.hibernate" % "hibernate-c3p0" % "5.2.16.Final"
 
 
 // https://github.com/playframework/playframework/blob/2.6.x/framework/project/Dependencies.scala#L11
-val akkaVersion = "2.5.12"
+val akkaVersion = "2.5.19"
 
 dependencyOverrides ++= Seq( // Seq for SBT 1.0.x
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
   "com.typesafe.akka" %% "akka-stream" % akkaVersion,
+  "com.typesafe.akka" %% "akka-remote" % akkaVersion,
+  "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
   "com.google.guava" % "guava" % "22.0",
   "org.slf4j" % "slf4j-api" % "1.7.25",
   "org.jboss.logging" % "jboss-logging" % "3.3.2.Final",
