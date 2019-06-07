@@ -215,7 +215,7 @@ iframe {
   display: block;
   width: 100%;
   background: transparent;
-  font-family: Poppins-Regular;
+  font-family: Koodakbold;
   font-size: 15px;
   color: #fff;
   line-height: 1.2;
@@ -433,9 +433,9 @@ textarea.input3 {
 .label-radio3 {
   display: block;
   position: relative;
-  padding-left: 28px;
+  padding-right: 28px;
   cursor: pointer;
-  font-family: Poppins-Medium;
+  font-family: Koodakbold;
   font-size: 18px;
   color: #fff;
   line-height: 1.2;
@@ -450,7 +450,7 @@ textarea.input3 {
   border-radius: 50%;
   border: 2px solid rgba(255,255,255,0.5);
   background: rgba(0,0,0,0.1);
-  left: 0;
+  right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -471,7 +471,7 @@ textarea.input3 {
   -moz-background-clip: padding;     
   -webkit-background-clip: padding;  
   background-clip: padding-box; 
-  left: 0;
+  right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
