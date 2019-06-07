@@ -257,6 +257,7 @@ input.input3 {
 
 
 textarea.input3 {
+  resize: none;
   min-height: 115px;
   padding-top: 13px;
   padding-bottom: 13px;
